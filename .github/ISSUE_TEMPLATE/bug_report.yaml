@@ -25,16 +25,6 @@ body:
       placeholder: "24.01.1"
     validations:
       required: true
-  - type: dropdown
-    id: 
-    attributes:
-      label: What desktop?
-      options:
-        - Official MATE
-        - Community XFCE
-        - Other
-    validations:
-      required: true
   - type: textarea
     id: describe
     attributes:
