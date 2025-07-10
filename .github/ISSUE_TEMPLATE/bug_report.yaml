@@ -1,0 +1,65 @@
+name: Bug Report
+description: Report a bug or issue here.
+#title: ""
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Please read this first
+        Before reporting an issue, please make sure it is not in our [Project Tracker](https://github.com/orgs/gershwin-desktop/projects/1).
+
+        Follow these tips to help us understand your issue.
+        * Only one issue per report
+        * The title describes the issue
+        * Follow the information of each field
+        * Be concise and clear on each field
+        * Make sure the issue is understandable after reading it
+
+        **Note:** We might close the report if we have a problem understanding the issue.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Use ghostbsd-version -v
+      placeholder: "24.01.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: 
+    attributes:
+      label: What desktop?
+      options:
+        - Official MATE
+        - Community XFCE
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: describe
+    attributes:
+      label: Explain the issue and what happens
+      description: What is the issue, and what happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Explain how to reproduce the bug?
+      description: What are the steps to reproduce this issue?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What is the Expected behavior (if applicable)
+      description: What do you expect to happen?
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context (if applicable)
+      description: Added your Terminal ouput or logs here with context
+    validations:
+      required: false

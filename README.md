@@ -1,0 +1,1 @@
+# Gershwin Desktop Environment community issue tracker
