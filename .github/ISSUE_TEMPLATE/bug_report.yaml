@@ -21,8 +21,8 @@ body:
     id: version
     attributes:
       label: Version
-      description: Use ghostbsd-version -v
-      placeholder: "24.01.1"
+      description: Use pkg info gershwin-desktop
+      placeholder: "20250712"
     validations:
       required: true
   - type: textarea
